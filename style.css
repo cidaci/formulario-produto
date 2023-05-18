@@ -1,0 +1,75 @@
+h1{ text-align: center;
+
+}
+body{
+    height:100%;
+    width: 100%;
+    box-sizing: content-box;
+    background: linear-gradient(72deg, #3de88e 1%, #8956f3 99%);
+   
+}
+.container {
+    background-size: contain;  
+    border: 3px solid rgb(238, 231, 237);
+    padding: 2px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: auto auto auto auto;
+    grid-template-areas: 
+        "h h h h"
+        "c c m m"
+        "c c m m"
+        "f f f f";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;       
+    height: 100% 100%;
+    
+}
+.header {
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: h;
+      
+       
+} 
+
+.contest {
+    grid-area: c;
+    background: url(fundo.jpg);
+    background-size: 100%; 
+    background-position: center;
+    display: flexbox;
+    flex-direction: column;
+    width:450px;
+    height:450px;
+      
+}
+.main{
+    grid: m;
+    width:450px;
+  height:450px;
+  padding-left: 100px;
+}
+.footer {
+    grid-area: f;
+    border: 0px solid rgb(191, 204, 9);
+    gap: 2px;
+}
+#formulario{
+    display: flex;
+    flex-direction: row;
+}
+.imagem{
+    height: 100%;
+    padding: 20px;
+    
+}
